@@ -64,7 +64,7 @@ fi
 	apt-get -qq -y --no-install-recommends install git
 
 if [[ ! -d $SRC/lib ]]; then
-	git clone https://github.com/igorpecovnik/lib
+	git clone --depth 1 https://github.com/igorpecovnik/lib
 fi
 cd $SRC/lib
 if [[ ! -f $SRC/.ignore_changes ]]; then
